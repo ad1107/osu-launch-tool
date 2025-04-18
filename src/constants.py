@@ -2,7 +2,6 @@ import os
 
 # --- Application Info ---
 APP_NAME = "osu! Launch Tool"
-APP_VERSION = "0.1.0"
 
 # --- Configuration File ---
 CONFIG_DIR = os.path.join(os.getenv('APPDATA', ''), APP_NAME) # Store config in %APPDATA%

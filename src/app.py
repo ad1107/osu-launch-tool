@@ -247,14 +247,13 @@ class App(ctk.CTk):
 
     def log_message(self, message, level="INFO"):
         """Appends a message to the log text box."""
-        try:
-            timestamp = time.strftime("%H:%M:%S")
-            formatted_message = f"[{timestamp} {level}] {message}\n"
-            self.log_textbox.configure(state="normal")
-            self.log_textbox.insert(END, formatted_message)
-            self.log_textbox.configure(state="disabled")
-            self.log_textbox.see(END) # Scroll to the bottom
-
+        timestamp = time.strftime("%H:%M:%S")
+        formatted_message = f"[{timestamp} {level}] {message}\n"
+        self.log_textbox.configure(state="normal")
+        self.log_textbox.insert(END, formatted_message)
+        self.log_textbox.configure(state="disabled")
+        self.log_textbox.see(END) # Scroll to the bottom
+        
     def update_status(self, message):
         """Updates the bottom status bar label."""
         self.status_label.configure(text=message)
