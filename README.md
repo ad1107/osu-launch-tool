@@ -8,6 +8,8 @@
 
 A GUI utility designed to simplify switching between Wacom default drivers and OpenTabletDriver for osu!, with integrated screen resolution control and configuration utilities.
 
+**For users: Download [here!](https://github.com/ad1107/osu-launch-tool/releases/latest) and click on the first zip file**
+
 
 ![osu! Launch Tool Screenshot](demo.png)
 
