@@ -126,6 +126,9 @@ class ExportConfigDialog(ctk.CTkToplevel):
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
+        icon_path = "logo.ico"
+        if os.path.exists(icon_path):
+             self.iconbitmap(icon_path)
 
         self.title(f"{constants.APP_NAME} v{constants.APP_VERSION}")
         self.resizable(False, False)
